@@ -31,12 +31,10 @@ body {
     position: relative;
 }
 
-/* CORREÇÃO GLOBAL: Remove todos os sublinhados de links */
 a {
     text-decoration: none !important;
     color: inherit;
 }
-
 
 ul {
     list-style: none;
@@ -292,6 +290,57 @@ main.container > section {
     font-weight: 600;
 }
 
+/* --- AVALIAÇÕES DE CLIENTES --- */
+.avaliacao-card {
+    padding: 2rem;
+    height: 100%; /* Garante altura igual para os cards no carrossel */
+}
+.avaliacao-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.avaliacao-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.header-info h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.estrelas {
+    color: #FFC107; /* Amarelo para estrelas */
+}
+.avaliacao-card p {
+    color: var(--cinza-texto);
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* --- NOS AVALIE NO GOOGLE --- */
+.nos-avalie-box {
+    text-align: center;
+    padding: 3rem 2.5rem;
+}
+.nos-avalie-icon {
+    font-size: 3rem;
+    color: var(--laranja-bg);
+    margin-bottom: 1.5rem;
+}
+.nos-avalie-box h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+.nos-avalie-box p {
+    color: var(--cinza-texto);
+    max-width: 600px;
+    margin: 0 auto 2.5rem auto;
+    line-height: 1.7;
+}
+
 /* --- CONTATO E LOCALIZAÇÃO --- */
 .contato-wrapper {
     display: grid;
@@ -348,27 +397,12 @@ main.container > section {
 #footer p:not(:last-child) {
     margin-bottom: 0.5rem;
 }
-
-/* CORREÇÃO: Estilo do link de crédito */
 .dev-credit a {
-    color: var(--branco-texto); /* Cor branca */
-    font-weight: 700; /* Negrito */
+    color: var(--branco-texto);
+    font-weight: 700;
 }
-
-/* CORREÇÃO: Cor do selo verificado */
 .dev-credit .fa-circle-check {
-    color: var(--azul-verificado); /* Cor azul */
-}
-
-/* --- ANIMAÇÕES --- */
-.reveal {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.5s ease-out;
-}
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
+    color: var(--azul-verificado);
 }
 
 /* --- RESPONSIVIDADE --- */
