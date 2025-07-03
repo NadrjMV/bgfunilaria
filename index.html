@@ -7,7 +7,7 @@
     <meta name="description" content="Oficina especializada em pintura automotiva, funilaria, restauração, polimento e cristalização em Santos Dumont, MG.">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://i.postimg.cc/ZYx0k6FG/514918130-18065482676149172-263134274429595282-n.jpg">
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/0NL4kMxm/514918130-18065482676149172-263134274429595282-n-removebg-preview.png">
 
     <!-- Google Fonts (Poppins) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,10 +17,14 @@
     <!-- Font Awesome (Ícones) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 
+    <!-- Splide.js (Carrossel para Avaliações) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Nosso JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -36,13 +40,14 @@
     <header id="header">
         <nav class="container">
             <a href="#" class="logo">
-                <img src="https://i.postimg.cc/ZYx0k6FG/514918130-18065482676149172-263134274429595282-n.jpg" alt="Logo BG Pintura Automotiva">
+                <img src="https://i.postimg.cc/0NL4kMxm/514918130-18065482676149172-263134274429595282-n-removebg-preview.png" alt="Logo BG Pintura Automotiva">
                 BG PINTURA AUTOMOTIVA
             </a>
             <ul class="menu">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#avaliacoes">Avaliações</a></li> <!-- NOVO ITEM -->
                 <li><a href="#contato">Contato</a></li>
             </ul>
             <a href="https://wa.me/5535984332592" target="_blank" class="btn btn-primary">Faça um Orçamento</a>
@@ -88,26 +93,90 @@
         <section id="portfolio" class="section">
             <h2 class="section-title reveal">Nosso Trabalho Fala por Si</h2>
             <div class="portfolio-grid">
-                <!-- Imagem 1 -->
                 <div class="portfolio-item reveal">
                     <img src="https://i.postimg.cc/qM85kMZ6/Whats-App-Image-2025-07-03-at-11-14-27.jpg" alt="Carro com pintura brilhante">
                     <div class="portfolio-overlay"><h3>Pintura Completa</h3></div>
                 </div>
-                <!-- Imagem 2 -->
                 <div class="portfolio-item reveal">
                     <img src="https://www.tecfil.com.br/wp-content/uploads/2021/01/IMAGEM_02-5.jpg" alt="Detalhe de um carro antigo restaurado">
                     <div class="portfolio-overlay"><h3>Restauração de Clássicos</h3></div>
                 </div>
-                <!-- Imagem 3 -->
                 <div class="portfolio-item reveal">
                     <img src="https://i.postimg.cc/fL9vBBGS/Whats-App-Image-2025-07-03-at-11-16-47.jpg" alt="Carro polido">
                     <div class="portfolio-overlay"><h3>Polimento Técnico</h3></div>
                 </div>
-                 <!-- Imagem 4 -->
                 <div class="portfolio-item reveal">
                     <img src="https://i.postimg.cc/bwVHP782/Whats-App-Image-2025-07-03-at-11-17-39.jpg" alt="Moto">
                     <div class="portfolio-overlay"><h3>Funilaria Premium</h3></div>
                 </div>
+            </div>
+        </section>
+
+        <!-- ==================== AVALIAÇÕES DE CLIENTES (NOVA SEÇÃO) ==================== -->
+        <section id="avaliacoes" class="section">
+            <h2 class="section-title reveal">O que nossos clientes dizem</h2>
+            <div class="splide" id="avaliacoes-carousel">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <!-- Avaliação 1 -->
+                        <li class="splide__slide">
+                            <div class="avaliacao-card glass-card">
+                                <div class="avaliacao-header">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop" alt="Foto de perfil cliente">
+                                    <div class="header-info">
+                                        <h4>Carlos Pereira</h4>
+                                        <div class="estrelas">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>"Serviço impecável! Deixei meu carro para um reparo na lataria e a pintura ficou melhor que a original. Profissionais de verdade."</p>
+                            </div>
+                        </li>
+                        <!-- Avaliação 2 -->
+                        <li class="splide__slide">
+                            <div class="avaliacao-card glass-card">
+                                <div class="avaliacao-header">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop" alt="Foto de perfil cliente">
+                                    <div class="header-info">
+                                        <h4>Juliana Martins</h4>
+                                        <div class="estrelas">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>"Fizeram o polimento e cristalização do meu carro e o resultado foi surreal. Brilho incrível e atendimento nota 10. Recomendo!"</p>
+                            </div>
+                        </li>
+                        <!-- Avaliação 3 -->
+                        <li class="splide__slide">
+                            <div class="avaliacao-card glass-card">
+                                <div class="avaliacao-header">
+                                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1780&auto=format&fit=crop" alt="Foto de perfil cliente">
+                                    <div class="header-info">
+                                        <h4>Ricardo Souza</h4>
+                                        <div class="estrelas">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>"Levei meu carro antigo para restaurar umas peças e o trabalho foi de mestre. Cuidado em cada detalhe. Fiquei muito satisfeito."</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== NOS AVALIE NO GOOGLE (NOVA SEÇÃO) ==================== -->
+        <section id="deixe-sua-avaliacao" class="section">
+            <div class="nos-avalie-box glass-card reveal">
+                <div class="nos-avalie-icon">
+                    <i class="fa-brands fa-google"></i>
+                </div>
+                <h2>Gostou do nosso trabalho?</h2>
+                <p>Sua opinião é muito importante para nós e ajuda outros clientes a conhecerem a qualidade da BG. Deixe sua avaliação no Google!</p>
+                <a href="https://www.google.com/search?q=bg+pintura+automotiva+itajuba&lqi=Ch1iZyBwaW50dXJhIGF1dG9tb3RpdmEgaXRhanViYUis7tT137mAgAhaLRAAEAEQAhgAGAEYAhgDIh1iZyBwaW50dXJhIGF1dG9tb3RpdmEgaXRhanViYZIBDWF1dG9fcGFpbnRpbmeqAWsKCC9tLzA1cWRoEAEqGSIVYmcgcGludHVyYSBhdXRvbW90aXZhKAwyHxABIhtTzRg4thd87nC76lxmiHgSGj2-KIHIZgPPLMkyIRACIh1iZyBwaW50dXJhIGF1dG9tb3RpdmEgaXRhanViYQ#lkt=LocalPoiReviews&lrd=0x94cb7d53584c4a3f:0xd2bda97699bc52cc,3,,,,&rlimm=15185479845413671628" target="_blank" class="btn btn-primary">Avaliar Agora</a>
             </div>
         </section>
         
